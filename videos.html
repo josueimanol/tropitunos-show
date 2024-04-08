@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropitunos Show</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: linear-gradient(to bottom, #0099cc, #737373);
+    }
+    .tropitunos-logo {
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      background-image: url('images/tropitunos-background.jpg');
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+      overflow: hidden;
+    }
+    .tropitunos-logo:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, #0099cc, #737373);
+    }
+    .tropitunos-title {
+      position: relative;
+      font-size: 5rem;
+      z-index: 1;
+      background-image: linear-gradient(to right, #c41212, #620e0e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tropitunos-title:before,
+    .tropitunos-title:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 10rem;
+      height: 1rem;
+      
+    }
+    .tropitunos-title:before {
+      left: -15rem;
+      transform: rotate(-45deg);
+    }
+    .tropitunos-title:after {
+      right: -15rem;
+      transform: rotate(45deg);
+    }
+    .tropitunos-subtitle {
+      font-size: 2rem;
+      margin-top: 1rem;
+      z-index: 1;
+      color:#000000 ;
+    }
+    .guitarra {
+      position: absolute;
+      top: 50%;
+      right: 7rem;
+      transform: translateY(-50%);
+      width: 15rem;
+      height: auto;
+    }
+    .acordeon {
+        position: absolute;
+      top: 50%;
+      left: 7rem;
+      transform: translateY(-50%);
+      width: 15rem;
+      height: auto; 
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5rem;
+      background-color: #000000;
+      box-shadow: 0 2px 4px rgb(0, 0, 0);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tropitunos-logo">
+      <h1 class="tropitunos-title">Tropitunos</h1>
+      <h2 class="tropitunos-subtitle">Show</h2>
+      <img src="D:\proyecto final\guitarra.png" alt="Guitarra" class="guitarra">
+   <img src="D:\proyecto final\acordeon.png" alt="Acordeon" class="acordeon">
+    </div>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <li class="nav-item">
+    <a class="nav-link" href="proyecto.html">pagina principal</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.facebook.com/TropitunosShowOficial">facebook</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:d460bd4e-6a0e-4ec0-815e-0aea5522b3c3" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      respertorio
+    </a>
+    <li class="nav-item">
+      <a class="nav-link" href="https://scontent.fmex1-6.fna.fbcdn.net/v/t39.30808-6/395736524_1316359722533769_6400717352265842777_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEZSyykienKamOSb5YiEG5rOQiDDfGV4Ok5CIMN8ZXg6RJxUlBu5Q95Feo8LKZHZ-jsM8_KrQpnvnmefDbDykH3&_nc_ohc=wE7oLxMx8VAAX9U3rQ7&_nc_ht=scontent.fmex1-6.fna&oh=00_AfCWMXjsC5kbMO5_ZREOeHHAKP80FqoQ23jnme2Wqz6GZg&oe=65F1CE6B">Contacto</a>
+    </li>
+  </li>
+</ul>
+</div>
+</nav>
+  <main>
+    <section id="videos">
+        <h1>Videos</h1>
+        <video width="320" height="240" controls>
+          <source src="D:\proyecto final\tropitunos1.mp4" type="video/mp4">
+          
+          Tu navegador no soporta la etiqueta video.
+        </video>
+        <video width="320" height="240" controls>
+          <source src="D:\proyecto final\tropitunos2.mp4" type="video/mp4">
+          
+          Tu navegador no soporta la etiqueta video.
+        </video>
+        <video width="320" height="240" controls>
+            <source src="D:\proyecto final\tropitunos3.mp4" type="video/mp4">
+            
+            Tu navegador no soporta la etiqueta video.
+          </video>
+          <video width="320" height="240" controls>
+            <source src="D:\proyecto final\tropitunos4.mp4" type="video/mp4">
+            
+            Tu navegador no soporta la etiqueta video.
+          </video>
+      <!-- Agrega más videos aquí -->
+    </section>
+  </main>
